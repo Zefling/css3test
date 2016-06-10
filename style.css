@@ -299,7 +299,11 @@ aside {
 				margin-right: .5em;
 				vertical-align: -.2em;
 				border-radius: 50%;
-				box-shadow: 0 2px white;
+				content: attr(data-level);
+				text-align: center;
+				color: white;
+				line-height: 17px;
+				text-shadow:none;
 			}
 
 footer {
@@ -350,4 +354,15 @@ footer {
 	font-size:10px;
 	margin:12px 15px 0;
 	text-align:right;
+}
+
+.level {
+	display: inline-block;
+	padding: .3em .4em;
+	margin: 0 0 0 .3em;
+	font-size: 50%;
+	background: hsl(200, 10%, 20%);
+	color: white;
+	border-radius: 50%;
+	vertical-align: middle;
 }
